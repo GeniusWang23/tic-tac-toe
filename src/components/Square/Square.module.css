@@ -1,0 +1,47 @@
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  font-weight: bold;
+  border: 3px solid #dee2e6;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+  transform: scale(1.05);
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.winningSquare {
+  background-color: #d4edda !important;
+  border-color: #28a745 !important;
+  color: #155724 !important;
+  animation: pulse 1s infinite;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}

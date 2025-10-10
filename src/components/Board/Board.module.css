@@ -1,0 +1,43 @@
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  min-height: 30px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.boardRow {
+  display: flex;
+  gap: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .boardContainer {
+    min-width: 250px;
+  }
+  
+  .boardRow {
+    gap: 6px;
+  }
+}
